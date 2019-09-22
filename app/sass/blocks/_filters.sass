@@ -1,0 +1,39 @@
+.filters
+  margin-bottom: 80px
+  &__form
+  &__top
+    margin-bottom: 24px
+  &__title
+    font-family: roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 20px
+    color: #1B1B1B
+    mix-blend-mode: normal
+    opacity: 0.5
+    margin-right: 5px
+  &__reset
+    font-family: roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 14px
+    color: #1B1B1B
+    mix-blend-mode: normal
+    opacity: 0.25
+    border: none
+    outline: none
+    cursor: pointer
+    background-color: transparent
+  @include lg_992
+    max-width: 451px
+    width: 100%
+    margin: 0 auto 81px auto
+    &__top
+      margin-bottom: 25px
+    &__item
+      display: flex
+      flex-direction: column
+  @include sm_480
+    margin: 0 auto 30px auto

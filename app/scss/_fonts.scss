@@ -1,0 +1,20 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto", "../fonts/Roboto/Roboto-Regular")
+@include font-face("roboto", "../fonts/Roboto/Roboto-Bold", bold)
+@include font-face("roboto", "../fonts/Roboto/Roboto-Light", 300)
+@include font-face("roboto", "../fonts/Roboto/Roboto-Medium", 500)
+@include font-face("roboto", "../fonts/Roboto/Roboto-Black", 900)
+
+@include font-face("oswald", "../fonts/Oswald/Oswald-DemiBold", 600)
+@include font-face("oswald", "../fonts/Oswald/Oswald-Demi-BoldItalic", 600, italic)
+
+@include font-face("playfair", "../fonts/Playfair_Display/PlayfairDisplay-Italic", 400, italic)
+
+@include font-face("bebasneue", "../fonts/Bebasneue/BebasNeueRegular")
+@include font-face("bebasneue", "../fonts/Bebasneue/BebasNeue-Thin", 100)
+@include font-face("bebasneue", "../fonts/Bebasneue/BebasNeueLight", 200)
+@include font-face("bebasneue", "../fonts/Bebasneue/BebasNeueBook", 300)
+@include font-face("bebasneue", "../fonts/Bebasneue/BebasNeueBold", 700)
+
+@include font-face("reenie-beanie", "../fonts/Reenie_Beanie/ReenieBeanie")

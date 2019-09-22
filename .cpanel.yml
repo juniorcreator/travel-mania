@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export REPOPATH=/home/timetowe/repositories/travel-mania/app/*
+    - export SITEPATH=/home/timetowe/public_html/travel-mania.time-to-web.com
+    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH

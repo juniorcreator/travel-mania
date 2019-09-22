@@ -1,0 +1,197 @@
+
+.section
+  position: relative
+  .section-title-wrap
+    margin-bottom: 77px
+    display: flex
+    justify-content: center
+  .section-title-inner
+    display: inline-block
+    .section-title
+      text-align: center
+      text-transform: uppercase
+      margin: 0
+      font-family: bebasneue
+      font-weight: 400
+      font-size: 36px
+      line-height: (55/36)
+      color: #000
+    .wrap
+      display: inline-block
+      position: relative
+    .img-wrap
+      width: 143px
+      right: 6px
+      bottom: -26px
+      position: absolute
+      svg
+        height: 100%
+        width: 100%
+    .sub-title
+      margin-top: 27px
+      font-family: bebasneue
+      font-weight: 300
+      font-size: 18px
+      line-height: (36/18)
+      text-align: center
+      letter-spacing: 1px
+      color: #000000
+  &--filters
+    padding-top: 77px
+    max-width: 949px
+    width: 100%
+    margin: 0 auto
+  &--call-back
+    padding-top: 55px
+    padding-bottom: 80px
+    min-height: 500px
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: top center
+  @include md_768
+    &--filters
+      padding-top: 77px
+  @include sm_480
+    &--filters
+      padding-top: 30px
+    &--call-back
+      padding-top: 30px
+      padding-bottom: 30px
+
+::placeholder
+  color: #979797
+  font-weight: 300
+
+::selection
+  background-color: $accent
+  color: #fff
+
+//owl
+.owl-nav
+  width: 694px
+  display: flex
+  justify-content: space-between
+  position: absolute
+  top: 153px
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 100%
+  max-width: calc(100% - 64px)
+  .owl-prev, .owl-next
+    outline: none
+    height: 47px
+    width: 47px
+    cursor: pointer
+    img
+      border-radius: 50%
+      width: 100%
+      height: 100%
+      padding: 14px
+      box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.15)
+  .owl-prev
+    img
+      box-shadow: 3px -8px 15px rgba(0, 0, 0, 0.15)
+      transform: rotate(180deg)
+
+
+
+.owl-dots
+  display: flex
+  justify-content: center
+  position: absolute
+  bottom: 31px
+  left: 0
+  width: 100%
+  button.owl-dot
+    cursor: pointer
+    width: 7px
+    height: 7px
+    display: block
+    border: 1px solid #000
+    opacity: .5
+    background-color: transparent
+    transition: all .3s
+    border-radius: 50%
+    margin: 0 6px
+    outline: none
+    &.active
+      background-color: #000
+      opacity: 1
+.travel, .reviews-carousel
+  .owl-nav
+    button
+      &.owl-prev, &.owl-next
+        border-radius: 50%
+        background-color: #fff
+
+//owl
+
+.info-wrap .social
+  position: absolute
+  right: 15px
+  top: 17%
+  .icon
+    display: block
+    height: 24px
+    width: 24px
+    margin-bottom: 13px
+    &:last-child
+      margin-bottom: 0
+    &:hover, &:focus
+      svg
+        path
+          fill: #ff6f61
+        circle
+          stroke: #ff6f61
+
+.logo
+  svg path
+    fill: #fff
+  a
+    display: block
+
+.top-line, .footer-main
+  a
+    display: block
+    line-height: (14/12)
+    color: #fff
+    text-decoration: none
+    &:hover, &:focus
+      color: #FF6F61
+
+.tel
+  text-align: right
+  font-size: 12px
+  a
+    margin-right: 1px
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  color: $text
+html, body
+  overflow-x: hidden
+
+input, textarea
+  border: #666 1px solid
+  outline: none
+  //&:focus:required:invalid
+  //  border-color: red
+  //&:required:valid
+  //  border-color: green
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+  &.img-width
+    width: 100%
+
+.text-center
+  text-align: center
+
+b, strong
+  font-weight: bold

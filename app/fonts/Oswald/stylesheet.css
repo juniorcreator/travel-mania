@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-MediumItalic.eot');
+    src: url('Oswald-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-MediumItalic.woff') format('woff'),
+        url('Oswald-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Light.eot');
+    src: url('Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Light.woff') format('woff'),
+        url('Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Regular.eot');
+    src: url('Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Regular.woff') format('woff'),
+        url('Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Heavy.eot');
+    src: url('Oswald-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Heavy.woff') format('woff'),
+        url('Oswald-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-LightItalic.eot');
+    src: url('Oswald-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-LightItalic.woff') format('woff'),
+        url('Oswald-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Medium.eot');
+    src: url('Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Medium.woff') format('woff'),
+        url('Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-DemiBold.eot');
+    src: url('Oswald-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-DemiBold.woff') format('woff'),
+        url('Oswald-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald Stencil';
+    src: url('OswaldStencil-Bold.eot');
+    src: url('OswaldStencil-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OswaldStencil-Bold.woff') format('woff'),
+        url('OswaldStencil-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-HeavyItalic.eot');
+    src: url('Oswald-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-HeavyItalic.woff') format('woff'),
+        url('Oswald-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-ExtraLight.eot');
+    src: url('Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-ExtraLight.woff') format('woff'),
+        url('Oswald-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-BoldItalic.eot');
+    src: url('Oswald-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-BoldItalic.woff') format('woff'),
+        url('Oswald-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-RegularItalic.eot');
+    src: url('Oswald-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-RegularItalic.woff') format('woff'),
+        url('Oswald-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Demi-BoldItalic.eot');
+    src: url('Oswald-Demi-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Demi-BoldItalic.woff') format('woff'),
+        url('Oswald-Demi-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Extra-LightItalic.eot');
+    src: url('Oswald-Extra-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Extra-LightItalic.woff') format('woff'),
+        url('Oswald-Extra-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Bold.eot');
+    src: url('Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Bold.woff') format('woff'),
+        url('Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

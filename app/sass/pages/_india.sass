@@ -1,0 +1,127 @@
+.page-india
+  .header
+    height: auto
+    .info-wrap
+      margin-top: 301px
+    .overlay
+      opacity: .3
+  @include lg_992
+    .header
+      .info-wrap
+        margin-top: 103px
+  @include sm_576
+    .header
+      .info-wrap
+        margin-top: 59px
+  @include sm_480
+    .header
+      .info-wrap
+        margin-top: 0
+
+.slide-india
+  display: flex
+  justify-content: flex-start
+  width: 100%
+  padding-left: 18%
+  .owl-item
+    padding-bottom: 30px
+  .owl-stage-outer
+    max-width: 700px
+  .owl-nav
+    width: 100%
+    max-width: 100%
+    padding: 0 9px
+    top: 73px
+    font-family: roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 14px
+  &__numbers
+    margin-bottom: 5px
+    font-family: roboto
+    font-style: normal
+    font-weight: 500
+    color: #FFFFFF
+  &__current
+    font-size: 18px
+    line-height: 21px
+  &__left
+    font-size: 12px
+    line-height: 14px
+    opacity: 0.7
+  &__item
+    display: inline-block
+    text-align: left
+  &__title
+    margin-bottom: 17px
+    font-family: roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 72px
+    line-height: 124%
+    color: #FFFFFF
+  &__dates, &__days
+    font-family: bebasneue
+    font-size: 24px
+    line-height: 124%
+    letter-spacing: 5px
+    text-transform: uppercase
+    font-weight: 700
+    color: #FFFFFF
+  &__dates
+    margin-bottom: 14px
+  &__days
+    margin-bottom: 39px
+  &__links
+    display: flex
+    justify-content: flex-start
+    .btn2
+      margin-right: 41px
+    a
+      font-size: 18px
+      line-height: 18px
+      color: #FFFFFF
+      font-family: bebasneue
+      font-weight: 700
+      letter-spacing: 0.1px
+      &:hover
+        color: #FFFFFF
+  .owl-nav
+    width: 100%
+    button
+      background-color: transparent
+      border: none
+      outline: none
+      font-family: roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 14px
+      color: #FFFFFF
+      transition: color .3s, text-shadow .3s
+      &:hover
+        text-shadow: 0px 0px 6px rgba(255,255,255,0.7)
+      &.disabled
+        opacity: 0.7
+  @include lg_992
+    &__title
+      font-size: 64px
+    &__dates
+      margin-bottom: 12px
+    &__days
+      margin-bottom: 42px
+    &__numbers
+      margin-bottom: 10px
+    .owl-nav
+      padding: 0 7px
+      top: 76px
+      .owl-next
+        margin-right: 6px
+  @include sm_480
+    padding-left: 3.5%
+    &__title
+      font-size: 53px
+    .owl-nav
+      padding: 0 10px
+      top: -30px

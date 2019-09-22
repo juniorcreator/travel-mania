@@ -1,0 +1,153 @@
+.call-back
+  max-width: 790px
+  width: 100%
+  margin: 0 auto
+  &--contacts
+    .call-back__title
+      text-transform: capitalize
+      text-align: left
+      font-family: roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 96px
+      line-height: 112px
+      color: #FFFFFF
+      margin-bottom: 20px
+    .call-back__top
+      margin-bottom: 30px
+    .call-back__text
+       color: #fff
+       font-weight: normal
+       line-height: 1.45
+    .call-back__form
+      margin-bottom: 41px
+  &__textarea
+    margin-bottom: 33px
+    textarea
+      width: 100%
+      height: 100px
+      resize: none
+      padding: 8px 14px
+      background: #FFFFFF
+      border: 1px solid #E5E5E5
+      border-radius: 3px
+      font-family: roboto
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 22px
+      color: #979797
+  &__title
+    overflow: hidden
+    margin-bottom: 93px
+    font-family: bebasneue
+    font-size: 36px
+    line-height: 36px
+    text-align: center
+    text-transform: uppercase
+    color: #1B1B1B
+  &__subtitle
+    font-family: roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 27px
+    color: #FFFFFF
+  &__form
+    margin-bottom: 80px
+  &__text
+    font-family: roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 124%
+    text-align: center
+    color: #1B1B1B
+    max-width: 328px
+    margin: 0 auto
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 61px
+  &__send
+    text-align: center
+  input
+    max-width: 220px
+    width: 100%
+    background: #FFFFFF
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    border-radius: 3px
+    padding: 8px 15px
+    margin-right: 1px
+    font-family: roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 22px
+    &:last-child
+      margin-right: 0
+  &__span
+    position: relative
+    input
+      padding: 8px 25px 8px 37px
+    span
+      position: absolute
+      left: 13px
+      top: 50%
+      transform: translateY(-50%)
+      color: #000
+  @include lg_992
+    &__textarea
+      margin-bottom: 34px
+    &__title
+      margin-bottom: 110px
+    textarea
+      height: 200px
+    &--contacts
+      max-width: 450px
+      .call-back__top
+        margin-bottom: 0
+      .call-back__title
+        font-size: 64px
+        line-height: 75px
+        margin-bottom: 20px
+    &__form
+      max-width: 450px
+      width: 100%
+      margin: 0 auto 80px auto
+    &__top
+      flex-direction: column
+      margin-bottom: 24px
+    input
+      max-width: 100%
+      margin-right: 0
+      margin-bottom: 30px
+    &__span
+      margin-bottom: 30px
+      width: 100%
+      input
+        margin-bottom: 0
+  @include sm_576
+    textarea
+      height: 142px
+    &--contacts
+      max-width: 330px
+    &__title
+      max-width: 509px
+      text-align: center
+      margin: 0 auto 53px auto
+    &__form
+      max-width: 330px
+  @include sm_480
+    &--contacts
+      max-width: 94%
+      .call-back__form
+        max-width: 100%
+      .call-back__title
+        font-size: 53px
+    &__form
+      max-width: 94%
+      margin: 0 auto 30px auto

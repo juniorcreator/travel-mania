@@ -1,0 +1,19 @@
+@import "../vars";
+@mixin lg_1440 {
+  @media (max-width: 1440px) { @content; }
+}
+@mixin lg_992 {
+  @media (max-width: 992px) { @content; }
+}
+@mixin md_768 {
+  @media (max-width: 768px) { @content; }
+}
+@mixin sm_576 {
+  @media (max-width: 576px) { @content; }
+}
+@mixin sm_480 {
+  @media (max-width: 480px) { @content; }
+}
+@mixin xs_320 {
+  @media (max-width: 320px) { @content; }
+}

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Northwell';
+    src: url('Northwell.eot');
+    src: url('Northwell.eot?#iefix') format('embedded-opentype'),
+        url('Northwell.woff') format('woff'),
+        url('Northwell.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Northwell Swash';
+    src: url('Northwell-Swash.eot');
+    src: url('Northwell-Swash.eot?#iefix') format('embedded-opentype'),
+        url('Northwell-Swash.woff') format('woff'),
+        url('Northwell-Swash.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Northwell Alt';
+    src: url('Northwell-Alt.eot');
+    src: url('Northwell-Alt.eot?#iefix') format('embedded-opentype'),
+        url('Northwell-Alt.woff') format('woff'),
+        url('Northwell-Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

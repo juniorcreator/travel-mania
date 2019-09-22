@@ -1,0 +1,54 @@
+.menu
+  ul
+    display: flex
+    margin: 0 0 0 1px
+    padding: 0
+    list-style-type: none
+    font-size: 12px
+    li
+      margin-right: 41px
+      &:last-child
+        margin-right: 0
+    a
+      display: block
+      line-height: (14/12)
+      color: #fff
+      text-decoration: none
+      &:hover, &:focus
+        color: #FF6F61
+
+
+//menu toggle
+.menu-toggle
+  margin: 5px 0
+  width: 24px
+  height: 9px
+  display: block
+  position: relative
+  z-index: 101
+  &::before, &::after
+    content: ''
+    display: block
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    background-color: #000
+    transition: transform .3s ease, background-color .3s ease, top .3s ease, bottom .3s ease, left .3s ease
+    transform-origin: 50% 50%
+  &::before
+    top: 0
+    transform-origin: 0 0
+  &::after
+    bottom: 0
+    transform-origin: 0 100%
+  &.active
+    &::before, &::after
+      background-color: #fff
+      left: 7px
+    &::before
+      top: -5px
+      transform: rotate(45deg)
+    &::after
+      bottom: -4px
+      transform: rotate(-45deg)

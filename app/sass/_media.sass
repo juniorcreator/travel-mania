@@ -1,0 +1,507 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+
+// ≥992px
++media-breakpoint-down(md)
+  .top-line-wrap
+    position: fixed
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    padding: 21px  0
+    margin: 0
+    background-color: #fff
+    z-index: 1000
+    .logo
+      svg
+        height: 12px
+        margin-left: -13px
+        path
+          fill: #000
+    #mobile-menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: fixed
+      top: 0
+      left: 0
+      transform: translateY(-100%)
+      width: 100vw
+      height: 100vh
+      max-width: none
+      background-color: #FF6F61
+      z-index: 100
+      transition: .3s ease
+      padding: (287/768) * 100% 0 0
+      overflow: hidden
+      a
+        &:hover, &:focus
+          color: #fff
+      .logo
+        position: relative
+        margin-bottom: 84px
+        &::after
+          content: ''
+        a
+          svg
+            transform: scale(1.2)
+            height: 18px
+        svg
+          margin-left: 0
+          path
+            fill: #fff
+        .underline
+          position: absolute
+          height: 11.3px
+          right: -37px
+          bottom: -22px
+      &.active
+        transform: translateY(0)
+      ul
+        font-size: 24px
+        flex-direction: column
+        align-items: center
+        li
+          margin: 0 0 30px
+      .mobile-menu-contacts
+        font-size: 14px
+        font-weight: bold
+        margin-bottom: 14px
+        a
+          margin: 0 7px
+      .social
+        a
+          margin: 0 5px
+
+  .header
+    padding-top: 334px
+    min-height: 1024px
+    .top-line
+      padding: 0
+    .info-wrap
+      margin-top: 0
+      .title
+        margin-left: 11px
+        margin-bottom: 119px
+      .sub-title
+        margin-bottom: 172px
+      .scroll
+        margin-left: 12px
+    .info
+      margin:
+        left: 0
+        bottom: 174px
+      padding:
+        left: 0
+        right: 0
+
+
+  .section-triggers
+    margin-bottom: 166px
+    .triggers
+      margin-top: 80px
+      margin-bottom: 53px
+      .item-wrap
+        display: flex
+        justify-content: center
+        margin-bottom: 28px
+        &:nth-child(n)
+          .item
+            width: 71%
+            margin-right: 0
+          .img-wrap
+            margin-top: 0
+            margin-bottom: 16px
+        &:nth-child(3n+1)
+          justify-content: start
+          .item
+            margin-left: 5px
+        //&:nth-child(4)
+        //  .img-wrap
+        //    margin-left: -5px
+        &:nth-child(3n+2)
+          .item
+            margin-left: 29px
+        &:nth-child(3n)
+          margin-top: 7px
+          margin-bottom: -7px
+          justify-content: end
+          .item
+            width: 47%
+            margin-left: auto
+    .info-wrap
+      padding: 0 5px
+      .img-wrap
+        width: 100%
+        margin:
+          left: 0
+          right: 0
+        height: auto
+        min-height: 436px
+        margin-bottom: 80px
+      .info
+        padding:
+          left: 0
+          right: 40px
+        .title
+          margin-top: 44px
+          left: auto
+          bottom: auto
+          right: 3px
+        .text
+          padding:
+            left: 0
+            right: 0
+
+  .section-travel
+    margin-bottom: 63px
+    .travel
+      .item
+        width: 510px
+      .img-wrap, .desc
+        width: 100%
+
+  .section-about
+    padding: 0
+    margin-bottom: 26px
+    .bg-wrap
+      left: -7px
+    .section-title-inner
+      .img-wrap
+        bottom: -24px
+    .about-img-wrap, .info-wrap
+      margin-left: 30px
+      padding-left: 30px
+      width: 540px
+      padding:
+        left: 0
+        right: 0
+    .about-img-wrap
+      .bg
+        top: (211/684) * 100%
+        left: (-90/540) * 100%
+    .info-wrap
+      padding: 57px 115px 0 0
+
+  .section-advantages
+    margin-bottom: 47px
+    .gallery-wrap
+      > *:nth-child(4)
+        .item
+          padding:
+            left: 12px
+            right: 11px
+      .item
+        min-height: 529px
+        padding: 266px 13px 0 14px
+        .title
+          margin-bottom: 27px
+          padding:
+            left: 12px
+            right: 12px
+
+  .section-unique
+    margin-bottom: 27px
+    .section-title-inner
+      padding-left: 6px
+    .section-title-wrap
+      .sub-title
+        margin-top: 47px
+        padding: 0 0 0 7px
+    .gallery-wrap
+      .item
+        height: 330px
+        .item-inner
+          top: (215/330) * 100%
+          padding: 0 30px
+  .section-another
+    margin-bottom: 67px
+    .section-title-inner
+      padding-left: 15px
+    .section-title-wrap
+      margin-bottom: 20px
+      .sub-title
+        padding: 0 15px
+  .section-reviews-carousel
+    .section-title-wrap
+      margin-bottom: 62px
+  .reviews-carousel
+    margin-bottom: 44px
+    .owl-nav
+      width: 512px
+      top: (259/563) * 100%
+
+  .section-form
+    padding-bottom: 115px
+    .form
+      padding:
+        left: 30px
+        right: 30px
+      .input-wrap, .btn
+        margin:
+          left: 50px
+          right: 50px
+  .footer
+    .footer-col
+      padding: 0
+    .footer-main
+      padding: 16px 0 0
+      text-align: left
+      flex-direction: row
+      justify-content: space-between
+      .logo, .footer-register, .social
+        margin-bottom: 0
+      .footer-register
+        margin-top: 3px
+      .social
+        width: auto
+    .footer-inner
+      padding-bottom: 31px
+    .footer-info
+      .menu
+        margin-bottom: 0
+        ul
+          flex-wrap: wrap
+          li
+            margin-right: 30px
+            margin-bottom: 15px
+      .txt
+        line-height: 1.2
+        margin-bottom: 13px
+// ≥768px
++media-breakpoint-down(sm)
+  .owl-nav
+    width: 512px
+
+  .top-line-wrap #mobile-menu
+    padding-top: (175/576) * 100%
+
+  .header
+    padding-top: 234px
+    min-height: 800px
+    height: 800px
+    .info-wrap
+      .title
+        margin-left: 0
+        margin-bottom: 86px
+      .sub-title
+        margin-bottom: 119px
+      .scroll
+        margin-left: 0
+    .info
+      padding:
+        left: 20px
+        right: 20px
+      margin-bottom: 73px
+
+  .section-triggers
+    margin-bottom: 160px
+    .info-wrap
+      padding: 0
+      .info
+        padding: 0
+        .title
+          margin-top: 35px
+          right: -2px
+    .triggers
+      margin-bottom: 51px
+      .item-wrap:nth-child(n)
+        margin-top: 0
+        .item
+          width: 90%
+          margin:
+            left: 0
+            right: 0
+      .item-wrap:nth-child(3n+1)
+        .item
+          margin-left: 11px
+      .item-wrap:nth-child(3n+2)
+        .item
+          margin-left: 12px
+      .item-wrap:nth-child(3n)
+        .item
+          width: 100%
+          margin-left: 34px
+          margin-right: -20px
+
+  .section-about
+    .about-img-wrap, .info-wrap
+      margin-left: 0
+      width: 100%
+      padding:
+        left: 15px
+        right: 15px
+    .about-img-wrap
+      height: 646px
+      .bg
+        top: (210/646) * 100%
+        left: (-32/540) * 100%
+      img
+        width: 100%
+    .info-wrap
+      padding-right: 100px
+
+  .section-advantages
+    .section-title-wrap
+      margin-bottom: 42px
+    .gallery-wrap
+      .item
+        .title
+          padding:
+            left: 56px
+            right: 56px
+
+  .section-unique
+    .section-title-inner
+      padding: 0
+    .section-title-wrap
+      margin-bottom: 48px
+      .sub-title
+        padding:
+          left: 0
+          right: 0
+    .gallery-wrap
+      .item
+        height: 240px
+        .item-inner
+          top: (96/240) * 100%
+          padding: 0 9px 0 21px
+        .title
+          margin-bottom: 14px
+        .desc
+          padding-right: 32px
+          line-height: (27/12)
+
+  .section-another
+    .section-title-inner
+      .section-title
+        margin-bottom: 11px
+    .section-title-wrap
+      .sub-title
+        padding: 0
+        margin: 0 -1px
+
+  .section-form
+    padding-bottom: 107px
+    .section-title-inner
+      .sub-title
+        margin-top: 15px
+    .form
+      .inputs
+        margin-bottom: 38px
+      .input-wrap
+        input
+          margin-bottom: 11px
+    .form-title
+      padding-right: 10px
+
+  .footer
+    .footer-col
+      margin-left: -11px
+    .footer-col2
+      margin-left: -32px
+      text-align: center
+      //display: flex
+      //flex-direction: column
+      //align-items: center
+      .footer-txt
+        padding-left: 56px
+    .footer-info
+      .menu
+        margin-right: -30px
+
+// ≥576px
++media-breakpoint-down(xs)
+  .top-line-wrap #mobile-menu
+    padding-top: 20px
+  .header
+    .info
+      padding:
+        left: 15px
+        right: 15px
+    .info-wrap
+      .sub-title
+        margin-bottom: 25px
+
+  .section-triggers
+    margin-bottom: 160px
+    .triggers
+      margin-bottom: 51px
+      .item-wrap:nth-child(n)
+        margin-top: 0
+        .item
+          width: 100%
+          margin:
+            left: 0
+            right: 0
+    .info-wrap
+      .img-wrap
+        min-height: unset
+        .bg
+          top: 30%
+
+  .section-travel
+    .travel
+      .item
+        width: 290px
+      .img-wrap
+        .city
+          font-size: 24px
+        .date
+          font-size: 14px
+
+  .section-advantages
+    .gallery-wrap
+      .item
+        padding-top: 100px
+        min-height: 420px
+
+  .reviews-carousel .owl-nav
+    top: 10%
+
+  .section-form
+    .form
+      .btn, .input-wrap
+        margin:
+          left: 0
+          right: 0
+
+  .footer
+    .footer-col
+      margin-left: 0
+    .footer-col2
+      text-align: left
+      .footer-txt
+        padding-left: 0
+    .footer-main
+      flex-direction: column
+      align-items: center
+      .logo, .social, .footer-register
+        margin-bottom: 10px
+    .footer-info
+      .menu
+        margin-right: -15px
+        ul
+          li
+            margin-right: 15px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

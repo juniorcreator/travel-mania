@@ -1,0 +1,91 @@
+.header
+  position: relative
+  height: 100vh
+  min-height: 850px
+  & > .img
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    background-position: center 0
+    background-size: cover
+    background-repeat: no-repeat
+  .overlay
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: radial-gradient(894.10px at 42.87% 49.23%, rgba(34, 34, 34, 0.426517) 0%, #0F0F0F 100%)
+    opacity: 0.75
+    z-index: -1
+  .top-line
+    padding-top: 32px
+    a
+      display: block
+      line-height: (14/12)
+      color: #fff
+      text-decoration: none
+      &:hover, &:focus
+        color: #FF6F61
+  /*top-line*/
+
+  /*info*/
+  .info-wrap
+    position: relative
+    margin-top: 207px
+    color: #fff
+    .title
+      text-align: center
+      margin: 0
+      margin-left: 23px
+      margin-bottom: 100px
+      font-family: bebasneue
+      font-weight: 600
+      font-size: 18px
+      line-height: 1
+      letter-spacing: 12px
+      text-transform: uppercase
+    .sub-title
+      text-align: center
+      margin: 0
+      margin-bottom: 186px
+      font-family: playfair
+      font-style: italic
+      font-size: 14px
+      line-height: calc(20 / 14)
+    .scroll
+      cursor: pointer
+      margin-left: 24px
+      font-family: bebasneue
+      font-weight: 600
+      font-size: 18px
+      line-height: 1
+      letter-spacing: 12px
+      text-transform: uppercase
+      color: #FF6F61
+
+  .info-inner
+    position: relative
+    display: inline-block
+
+  .info
+    padding: 0 50px
+    margin: 0 0 52px 12px
+    text-align: center
+    .text
+      text-align: center
+      font-family: oswald
+      font-weight: 600
+      font-style: normal
+      font-size: 36px
+      line-height: calc(42 / 36)
+    .text > span, .info-inner .text
+      font-style: italic
+
+  .info-inner svg
+    position: absolute
+    right: 0
+    bottom: -25px

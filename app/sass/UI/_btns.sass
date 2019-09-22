@@ -1,0 +1,142 @@
+.btn
+  position: relative
+  display: inline-block
+  border: none
+  background: linear-gradient(90deg, #F27A54 0%, #A154F2 100%)
+  box-shadow: 2px 4px 25px rgba(161, 84, 242, 0.42)
+  border-radius: 20px
+  padding: 12px 50px 11px
+  font-family: bebasneue
+  font-weight: 700
+  font-size: 18px
+  line-height: 1
+  text-align: center
+  text-transform: uppercase
+  color: #FFFFFF
+  cursor: pointer
+  &, &:hover, &:focus
+    outline: none
+
+.btn-arrow
+  &::after
+    content: ''
+    position: absolute
+    width: 8px
+    height: 12px
+    background-image: url(../img/btn_arrow_right.svg)
+    right: 21px
+    top: 50%
+    transform: translateY(-50%)
+
+.btn2
+  margin-right: 45px
+  font-family: bebasneue
+  font-weight: 700
+  font-size: 14px
+  line-height: 1
+  letter-spacing: 2px
+  padding: 0
+  text-transform: uppercase
+  background-color: transparent
+  border: none
+  display: inline-block
+  position: relative
+  text-decoration: none
+  color: #000
+  &:after
+    content: ""
+    position: absolute
+    display: block
+    width: 100%
+    height: 3px
+    bottom: -13px
+    background-color: #FF6F61
+    transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+    transform: scaleX(0)
+    transform-origin: right
+  &:hover, &:focus
+    color: #000
+  &:last-child
+    margin-right: 0
+  &:hover
+    &::after
+      transform: scaleX(1)
+      transform-origin: left
+      transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+
+.btns
+  display: inline-block
+  border: none
+  outline: none !important
+  transition: background-color .3s
+  &--show, &--send
+    max-width: 255px
+    width: 100%
+    padding: 16px 15px
+    cursor: pointer
+    font-family: bebasneue
+    font-weight: 500
+    font-size: 18px
+    line-height: 18px
+    text-transform: uppercase
+    color: #FFFFFF
+    background: #FF6F61
+    border-radius: 3px
+    &:hover
+      background-color: #BE5248
+  &--details
+    font-family: roboto
+    font-style: normal
+    text-transform: capitalize
+    font-weight: normal
+    font-size: 12px
+    line-height: 18px
+    letter-spacing: 0.15em
+    text-decoration-line: underline
+    text-underline-position: under
+    color: #555555
+  &--order
+    text-decoration: none
+    max-width: 320px
+    width: 100%
+    padding: 13px 15px 9px 15px
+    font-family: bebasneue
+    font-weight: 600
+    font-size: 18px
+    line-height: 18px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    background: #FF6F61
+    border-radius: 3px
+    &:hover
+      background-color: #BE5248
+      text-decoration: none
+      color: #FFFFFF
+    &--lg
+      display: none
+  &--send
+    font-weight: 600
+    max-width: 220px
+    padding: 13px 15px 9px 15px
+    font-size: 16px
+  @include lg_992
+    &--show
+      max-width: 100%
+    &--order
+      display: block
+      margin: 0 auto 15px auto
+      &--lg
+        display: block
+    &--send
+      max-width: 100%
+      font-size: 18px
+  @include md_768
+    &--order
+      max-width: 100%
+      padding: 18px 15px 14px 15px
+    &--send
+      display: block
+      max-width: 446px
+      width: 100%
+      margin: 0 auto

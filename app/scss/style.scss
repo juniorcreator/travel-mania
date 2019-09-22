@@ -1,0 +1,35 @@
+@import "_mixins/font-face";
+@import "vars";
+
+
+//media sk
+@import "query/query";
+
+//main
+@import "main";
+
+//fonts
+@import "fonts";
+
+//buttons
+@import "btns/btns";
+
+//UI
+@import "UI/select";
+
+//old sasss styles
+@import "old_styles";
+
+// blocks
+@import "blocks/scroll";
+@import "blocks/filters";
+
+//pages
+@import "pages/india";
+@import "pages/home";
+
+//vendors
+@import "libs";
+
+//media query old
+@import "media";
